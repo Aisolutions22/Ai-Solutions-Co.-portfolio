@@ -10,7 +10,7 @@ const AboutSection = () => (
     <div className="max-w-6xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
       <p className="text-muted-foreground text-lg max-w-3xl mb-16 leading-relaxed">
-        I'm Abu Malik, an Automation Specialist & Founder of AI Solutions focused on building practical AI systems that deliver real business results.
+        I'm Mohamed Ali, Founder of AI Solutions | Automation & AI Specialist, focused on building practical AI systems that deliver real business results.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

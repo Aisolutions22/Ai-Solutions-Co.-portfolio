@@ -20,7 +20,7 @@ const HeroSection = () => (
       <a href="#projects" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity">
         View My Projects <ArrowRight size={18} />
       </a>
-      <a href="#contact" className="inline-flex items-center justify-center px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary transition-colors">
+      <a href="#contact" className="inline-flex items-center justify-center px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary hover:border-primary/30 transition-all">
         Get In Touch
       </a>
     </div>

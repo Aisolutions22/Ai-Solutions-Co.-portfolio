@@ -16,7 +16,7 @@ const Index = () => (
     <ProcessSection />
     <ContactSection />
     <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border">
-      © 2026 Abu Malik. All rights reserved.
+      © 2026 Mohamed Ali — AI Solutions. All rights reserved.
     </footer>
   </div>
 );

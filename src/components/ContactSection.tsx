@@ -10,13 +10,13 @@ const ContactSection = () => (
       </p>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="mailto:contact@abumalik.ai" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary transition-colors">
+        <a href="mailto:sales@aisolutions22.cloud" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary hover:border-primary/30 transition-all">
           <Mail size={18} /> Email
         </a>
-        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary transition-colors">
+        <a href="https://wa.me/201007292223" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary hover:border-primary/30 transition-all">
           <MessageCircle size={18} /> WhatsApp
         </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary transition-colors">
+        <a href="https://www.linkedin.com/in/mohamed-%C3%A5li-" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary hover:border-primary/30 transition-all">
           <Linkedin size={18} /> LinkedIn
         </a>
       </div>
