@@ -1,0 +1,29 @@
+const stats = [
+  { value: "7+", label: "Automation Projects", desc: "Real-world AI & workflow systems delivered" },
+  { value: "5+", label: "Industries Served", desc: "Hotels, restaurants, real estate, sales, content" },
+  { value: "3+", label: "Countries", desc: "Projects delivered globally" },
+  { value: "100%", label: "Custom Solutions", desc: "Fully tailored automations, no templates" },
+];
+
+const AboutSection = () => (
+  <section id="about" className="py-24 px-6">
+    <div className="max-w-6xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+      <p className="text-muted-foreground text-lg max-w-3xl mb-16 leading-relaxed">
+        I'm Abu Malik, an Automation Specialist & Founder of AI Solutions focused on building practical AI systems that deliver real business results.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {stats.map((s) => (
+          <div key={s.label} className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors">
+            <div className="text-3xl font-bold text-gradient mb-2">{s.value}</div>
+            <div className="font-semibold text-foreground mb-1">{s.label}</div>
+            <div className="text-sm text-muted-foreground">{s.desc}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+export default AboutSection;
