@@ -14,7 +14,7 @@ const HeroSection = () => (
         <span className="text-sm text-muted-foreground">Available for new projects</span>
       </div>
 
-      <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight max-w-5xl whitespace-nowrap">
+      <h1 className="font-extrabold leading-tight max-w-5xl whitespace-nowrap" style={{ fontSize: 'clamp(1.75rem, 5vw, 4.5rem)' }}>
         We Build <span className="text-gradient">AI Automation Systems</span>
       </h1>
 
