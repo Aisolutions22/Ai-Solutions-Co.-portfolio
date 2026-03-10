@@ -66,4 +66,8 @@
   .glow-box {
     box-shadow: var(--glow-blue), var(--glow-purple);
   }
+
+  .glass-card {
+    @apply bg-card/50 backdrop-blur-md border border-border/50;
+  }
 }
