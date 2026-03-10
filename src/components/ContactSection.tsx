@@ -16,7 +16,7 @@ const ContactSection = () => (
         Ready to automate your business with AI? Let's discuss your project.
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
         {socials.map(({ icon: Icon, label, href }) => (
           <a
             key={label}

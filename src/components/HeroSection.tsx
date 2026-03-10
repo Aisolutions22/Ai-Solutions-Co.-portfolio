@@ -5,8 +5,8 @@ const HeroSection = () => (
     {/* Subtle grid background */}
     <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
     {/* Glow orbs */}
-    <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-    <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+    <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-96 sm:h-96 bg-primary/5 rounded-full blur-3xl" />
+    <div className="absolute bottom-1/4 right-1/4 w-40 h-40 sm:w-80 sm:h-80 bg-accent/5 rounded-full blur-3xl" />
 
     <div className="relative z-10">
       <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 backdrop-blur-sm mb-8">
@@ -14,7 +14,7 @@ const HeroSection = () => (
         <span className="text-sm text-muted-foreground">Available for new projects</span>
       </div>
 
-      <h1 className="font-extrabold leading-tight max-w-5xl whitespace-nowrap" style={{ fontSize: 'clamp(1.75rem, 5vw, 4.5rem)' }}>
+      <h1 className="font-extrabold leading-tight max-w-5xl" style={{ fontSize: 'clamp(1.5rem, 5vw, 4.5rem)' }}>
         We Build <span className="text-gradient">AI Automation Systems</span>
       </h1>
 
