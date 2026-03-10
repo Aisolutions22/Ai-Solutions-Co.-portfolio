@@ -14,7 +14,7 @@ const ProcessSection = () => (
         From chaos to streamlined automation in 5 steps.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {steps.map((s) => (
           <div key={s.num} className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors">
             <div className="text-2xl font-bold text-gradient mb-3">{s.num}</div>
