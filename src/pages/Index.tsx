@@ -9,12 +9,14 @@ import ContactSection from "@/components/ContactSection";
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
-    <HeroSection />
-    <AboutSection />
-    <SkillsSection />
-    <ProjectsSection />
-    <ProcessSection />
-    <ContactSection />
+    <main>
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ProcessSection />
+      <ContactSection />
+    </main>
     <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border">
       © 2026 Mohamed Ali — AI Solutions. All rights reserved.
     </footer>
