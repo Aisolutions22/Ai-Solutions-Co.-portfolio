@@ -1,4 +1,11 @@
-import { Mail, MessageCircle, Linkedin } from "lucide-react";
+import { Mail, MessageCircle, Linkedin, Facebook } from "lucide-react";
+
+const socials = [
+  { icon: Mail, label: "Email", href: "mailto:sales@aisolutions22.cloud" },
+  { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/201007292223" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/mohamed-%C3%A5li-" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/share/1Cd3zk5ZU7/" },
+];
 
 const ContactSection = () => (
   <section id="contact" className="py-24 px-6">
@@ -10,15 +17,17 @@ const ContactSection = () => (
       </p>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="mailto:sales@aisolutions22.cloud" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary hover:border-primary/30 transition-all">
-          <Mail size={18} /> Email
-        </a>
-        <a href="https://wa.me/201007292223" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary hover:border-primary/30 transition-all">
-          <MessageCircle size={18} /> WhatsApp
-        </a>
-        <a href="https://www.linkedin.com/in/mohamed-%C3%A5li-" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary hover:border-primary/30 transition-all">
-          <Linkedin size={18} /> LinkedIn
-        </a>
+        {socials.map(({ icon: Icon, label, href }) => (
+          <a
+            key={label}
+            href={href}
+            target={label === "Email" ? undefined : "_blank"}
+            rel={label === "Email" ? undefined : "noopener noreferrer"}
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary hover:border-primary/30 hover:shadow-[0_0_15px_hsl(217,91%,60%,0.15)] transition-all duration-300"
+          >
+            <Icon size={18} /> {label}
+          </a>
+        ))}
       </div>
     </div>
   </section>
