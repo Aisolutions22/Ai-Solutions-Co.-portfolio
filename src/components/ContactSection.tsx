@@ -21,8 +21,8 @@ const ContactSection = () => (
           <a
             key={label}
             href={href}
-            target={label === "Email" ? undefined : "_blank"}
-            rel={label === "Email" ? undefined : "noopener noreferrer"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border text-foreground font-medium hover:bg-secondary hover:border-primary/30 hover:shadow-[0_0_15px_hsl(217,91%,60%,0.15)] transition-all duration-300"
           >
             <Icon size={18} /> {label}

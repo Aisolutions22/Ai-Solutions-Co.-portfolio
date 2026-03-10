@@ -30,6 +30,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            onClick={(e) => e.stopPropagation()}
           >
             <Facebook size={18} />
           </a>
