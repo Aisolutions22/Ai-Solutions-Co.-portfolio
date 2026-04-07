@@ -30,6 +30,7 @@ const Navbar = () => {
             href="https://www.facebook.com/share/1Cd3zk5ZU7/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Facebook"
             className="text-muted-foreground hover:text-primary transition-colors duration-200"
             onClick={(e) => e.stopPropagation()}
           >
