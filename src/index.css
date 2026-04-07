@@ -15,7 +15,7 @@
     --popover: 0 0% 89%;
     --popover-foreground: 0 0% 9%;
 
-    --primary: 161 93% 30%;
+    --primary: 161 93% 22%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 32%;
@@ -25,14 +25,14 @@
     --muted-foreground: 0 0% 9%;
 
     --accent: 166 76% 96%;
-    --accent-foreground: 173 80% 40%;
+    --accent-foreground: 173 80% 28%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
     --border: 0 0% 83%;
     --input: 0 0% 83%;
-    --ring: 161 93% 30%;
+    --ring: 161 93% 22%;
 
     --radius: 0.75rem;
 
@@ -46,12 +46,12 @@
     --chart-5: 0 0% 45%;
     --sidebar: 0 0% 98%;
     --sidebar-foreground: 0 0% 9%;
-    --sidebar-primary: 161 93% 30%;
+    --sidebar-primary: 161 93% 22%;
     --sidebar-primary-foreground: 151 80% 95%;
     --sidebar-accent: 0 0% 32%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 83%;
-    --sidebar-ring: 161 93% 30%;
+    --sidebar-ring: 161 93% 22%;
     --font-sans: 'Work Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
     --font-serif: 'Lora', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
     --font-mono: 'Inconsolata', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
