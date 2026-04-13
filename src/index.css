@@ -146,3 +146,8 @@
   0% { left: -100%; }
   100% { left: 100%; }
 }
+
+@keyframes badge-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(251,146,60,0.4), 0 0 40px rgba(0,82,255,0.2); }
+  50% { box-shadow: 0 0 30px rgba(251,146,60,0.6), 0 0 60px rgba(0,82,255,0.35); }
+}
