@@ -3,13 +3,14 @@ import { ArrowRight } from "lucide-react";
 const HeroSection = () => (
   <section className="min-h-screen flex flex-col items-center justify-start text-center px-6 pt-32 relative overflow-hidden">
     <div className="relative z-10">
-      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-white/60 backdrop-blur-sm mb-8 shadow-sm">
-        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-        <span className="text-sm text-muted-foreground">Available for new projects</span>
+      <div className="shimmer-badge inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900/80 text-white mb-8 shadow-[0_0_20px_rgba(251,146,60,0.4),0_0_40px_rgba(0,82,255,0.2)]">
+        <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
+        <span className="text-sm font-medium tracking-wide">Available for new projects</span>
       </div>
 
       <h1 className="font-extrabold leading-tight max-w-5xl text-foreground" style={{ fontSize: 'clamp(1.5rem, 5vw, 4.5rem)' }}>
-        We Build <span className="text-gradient">AI Automation Systems</span>
+        We Build <span className="text-gradient">AI Automation</span>{" "}
+        <span className="text-[#0052FF]">Systems</span>
       </h1>
 
       <p className="mt-6 text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
