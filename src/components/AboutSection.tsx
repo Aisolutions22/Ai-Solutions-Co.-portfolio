@@ -1,8 +1,8 @@
 const stats = [
-  { value: "7+", label: "Automation Projects", desc: "Real-world AI & workflow systems delivered" },
-  { value: "5+", label: "Industries Served", desc: "Hotels, restaurants, real estate, sales, content" },
-  { value: "3+", label: "Countries", desc: "Projects delivered globally" },
-  { value: "100%", label: "Custom Solutions", desc: "Fully tailored automations, no templates" },
+  { value: "15+", label: "Automation Projects", desc: "Real-world AI & workflow systems delivered" },
+  { value: "10+", label: "Industries Served", desc: "Hotels, Real Estate, Sales, & Content" },
+  { value: "6+", label: "Countries", desc: "Projects delivered and managed globally" },
+  { value: "100%", label: "Custom Solutions", desc: "Fully tailored architecture, no templates" },
 ];
 
 const AboutSection = () => (

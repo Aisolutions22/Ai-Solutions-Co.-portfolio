@@ -1,26 +1,25 @@
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck, Workflow, Building2, Globe, Puzzle } from "lucide-react";
+
+const stats = [
+  { icon: Workflow, value: "15+", label: "Automation Projects", desc: "Real-world AI & workflow systems delivered" },
+  { icon: Building2, value: "10+", label: "Industries Served", desc: "Hotels, Real Estate, Sales, & Content" },
+  { icon: Globe, value: "6+", label: "Countries", desc: "Projects delivered and managed globally" },
+  { icon: Puzzle, value: "100%", label: "Custom Solutions", desc: "Fully tailored architecture, no templates" },
+];
 
 const HeroSection = () => (
-  <section className="min-h-screen flex flex-col items-center justify-start text-center px-6 pt-32 relative overflow-hidden">
-    <div className="relative z-10">
-      <div className="shimmer-badge pulse-badge inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900/80 text-white mb-12 shadow-[0_0_20px_rgba(251,146,60,0.4),0_0_40px_rgba(0,82,255,0.2)]">
-        <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-        <span className="text-sm font-medium tracking-wide">Available for new projects</span>
+  <section className="flex flex-col items-center justify-start text-center px-6 pt-32 pb-20 relative overflow-hidden">
+    <div className="relative z-10 w-full max-w-6xl">
+      <div className="shimmer-badge pulse-badge inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900/80 text-white mb-10 shadow-[0_0_20px_rgba(251,146,60,0.4),0_0_40px_rgba(0,82,255,0.2)]">
+        <ShieldCheck size={16} className="text-emerald-400 flex-shrink-0" />
+        <span className="text-sm font-medium tracking-wide">Verified AI Architecture & Digital Transformation Expert</span>
       </div>
 
-      <h1 className="font-extrabold leading-tight max-w-5xl text-foreground tracking-[0.02em]" style={{ fontSize: 'clamp(1.5rem, 5vw, 4.5rem)' }}>
-        We Build <span className="text-gradient">Intelligent Systems</span>{" "}
-        <span className="text-[#0052FF]">That Scale Business.</span>
+      <h1 className="font-extrabold leading-tight max-w-5xl mx-auto text-foreground tracking-[0.02em]" style={{ fontSize: 'clamp(1.5rem, 5vw, 4.5rem)' }}>
+        We Build Intelligent <span className="text-[#0052FF]">Systems</span>
+        <br />
+        That <span className="italic font-extrabold text-gradient">Scale Business.</span>
       </h1>
-
-      <div className="mt-8 flex items-center justify-center gap-2 text-muted-foreground">
-        <ShieldCheck size={18} className="text-[#0052FF] flex-shrink-0" />
-        <span className="text-xs font-semibold uppercase tracking-[0.15em]">Verified AI Architecture Expert</span>
-      </div>
-
-      <p className="mt-6 text-slate-700 max-w-2xl mx-auto text-lg leading-relaxed">
-        I'm Mohamed Ali, Founder of AI Solutions. With over a decade of experience in business leadership and sales management, I bridge the gap between complex AI technology and real-world business growth through advanced n8n automation.
-      </p>
 
       <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
         <a
@@ -35,6 +34,20 @@ const HeroSection = () => (
         >
           Get In Touch
         </a>
+      </div>
+
+      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {stats.map((s) => {
+          const Icon = s.icon;
+          return (
+            <div key={s.label} className="p-6 rounded-2xl glass-card border border-primary/20 hover:border-primary/40 hover:shadow-lg transition-all duration-300 text-left">
+              <Icon size={22} className="text-primary mb-3" />
+              <div className="text-3xl font-bold text-primary mb-1">{s.value}</div>
+              <div className="font-semibold text-foreground text-sm mb-1">{s.label}</div>
+              <div className="text-xs text-muted-foreground">{s.desc}</div>
+            </div>
+          );
+        })}
       </div>
     </div>
   </section>
