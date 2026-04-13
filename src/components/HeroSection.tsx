@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => (
-  <section className="min-h-screen flex flex-col items-center justify-start text-center px-6 pt-24 relative overflow-hidden">
+  <section className="min-h-screen flex flex-col items-center justify-start text-center px-6 pt-32 relative overflow-hidden">
     <div className="relative z-10">
       <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-white/60 backdrop-blur-sm mb-8 shadow-sm">
         <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
