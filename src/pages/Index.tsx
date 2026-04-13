@@ -18,7 +18,7 @@ const Index = () => (
       <ContactSection />
     </main>
     <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border">
-      © 2026 Mohamed Ali — AI Solutions. All rights reserved.
+      © 2026 AI Solutions. Engineered for Growth by Mohamed Ali. All Rights Reserved.
     </footer>
   </div>
 );
