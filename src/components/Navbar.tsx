@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass-nav">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
-          <img src={logo} alt="AI Solutions Logo" className="h-10 w-auto" />
+          <img src={logo} alt="AI Solutions Logo" width={46} height={40} className="h-10 w-auto" />
           <span className="text-lg font-bold tracking-tight text-foreground">AI Solutions</span>
         </a>
 
