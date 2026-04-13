@@ -13,7 +13,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass-nav">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
           <img src={logo} alt="AI Solutions Logo" className="h-10 w-auto" />
@@ -36,7 +36,7 @@ const Navbar = () => {
           >
             <Facebook size={18} />
           </a>
-          <a href="#contact" className="px-5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 hover:shadow-[0_0_15px_hsl(217,91%,60%,0.3)] transition-all duration-300">
+          <a href="#contact" className="px-5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-[#0A192F] hover:scale-105 hover:shadow-lg transition-all duration-300">
             Contact
           </a>
         </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden bg-background/95 backdrop-blur-xl border-t border-border/50 px-6 py-4 space-y-3">
+        <div className="md:hidden glass-card border-t border-border/50 px-6 py-4 space-y-3">
           {navLinks.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block text-muted-foreground hover:text-foreground transition-colors">
               {l.label}

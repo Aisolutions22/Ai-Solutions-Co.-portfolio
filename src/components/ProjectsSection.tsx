@@ -65,7 +65,7 @@ const projects: Project[] = [
 const ProjectsSection = () => (
   <section id="projects" className="py-24 px-6">
     <div className="max-w-6xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">Selected Projects</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Selected Projects</h2>
       <p className="text-muted-foreground text-lg max-w-2xl mb-12">
         Showcasing advanced AI automation and agentic systems dealing with real-world complexities.
       </p>
@@ -74,10 +74,10 @@ const ProjectsSection = () => (
         {projects.map((p) => (
           <div
             key={p.title}
-            className={`group p-6 rounded-2xl bg-card border transition-all ${
+            className={`group p-6 rounded-2xl glass-card transition-all duration-300 ${
               p.flagship
-                ? "md:col-span-2 border-primary/40 shadow-[0_0_20px_hsl(var(--primary)/0.08)]"
-                : "border-border hover:border-primary/30"
+                ? "md:col-span-2 border-primary/30 shadow-md glow-box"
+                : "hover:border-primary/30 hover:shadow-lg"
             }`}
           >
             <div className="flex items-center gap-3 mb-4">
@@ -104,7 +104,7 @@ const ProjectsSection = () => (
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-auto inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
+                  className="ml-auto inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-[#0A192F] hover:scale-105 hover:shadow-lg transition-all duration-300"
                 >
                   View Live System Dashboard <ExternalLink size={14} />
                 </a>
