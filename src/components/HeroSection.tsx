@@ -1,20 +1,25 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 
 const HeroSection = () => (
   <section className="min-h-screen flex flex-col items-center justify-start text-center px-6 pt-32 relative overflow-hidden">
     <div className="relative z-10">
-      <div className="shimmer-badge inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900/80 text-white mb-8 shadow-[0_0_20px_rgba(251,146,60,0.4),0_0_40px_rgba(0,82,255,0.2)]">
-        <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
+      <div className="shimmer-badge pulse-badge inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900/80 text-white mb-12 shadow-[0_0_20px_rgba(251,146,60,0.4),0_0_40px_rgba(0,82,255,0.2)]">
+        <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
         <span className="text-sm font-medium tracking-wide">Available for new projects</span>
       </div>
 
-      <h1 className="font-extrabold leading-tight max-w-5xl text-foreground" style={{ fontSize: 'clamp(1.5rem, 5vw, 4.5rem)' }}>
-        We Build <span className="text-gradient">AI Automation</span>{" "}
-        <span className="text-[#0052FF]">Systems</span>
+      <h1 className="font-extrabold leading-tight max-w-5xl text-foreground tracking-[0.02em]" style={{ fontSize: 'clamp(1.5rem, 5vw, 4.5rem)' }}>
+        We Build <span className="text-gradient">Intelligent Systems</span>{" "}
+        <span className="text-[#0052FF]">That Scale Business.</span>
       </h1>
 
-      <p className="mt-6 text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-        From AI agents to smart workflows, we help companies automate operations, sales, and content to reduce manual work and scale efficiently.
+      <div className="mt-8 flex items-center justify-center gap-2 text-muted-foreground">
+        <ShieldCheck size={18} className="text-[#0052FF] flex-shrink-0" />
+        <span className="text-xs font-semibold uppercase tracking-[0.15em]">Verified AI Architecture Expert</span>
+      </div>
+
+      <p className="mt-6 text-slate-700 max-w-2xl mx-auto text-lg leading-relaxed">
+        I'm Mohamed Ali, Founder of AI Solutions. With over a decade of experience in business leadership and sales management, I bridge the gap between complex AI technology and real-world business growth through advanced n8n automation.
       </p>
 
       <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
