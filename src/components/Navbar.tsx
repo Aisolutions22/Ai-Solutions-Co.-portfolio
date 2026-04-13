@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Facebook } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.webp";
 
 const navLinks = [
   { label: "Capabilities", href: "#capabilities" },
