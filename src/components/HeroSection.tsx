@@ -31,13 +31,13 @@ const HeroSection = () => (
       <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
         <a
           href="#projects"
-          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium hover:bg-[#0A192F] hover:scale-105 hover:shadow-xl transition-all duration-300"
+          className="cta-shimmer-primary relative overflow-hidden inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium shadow-[0_0_20px_hsl(var(--ring)/0.35)] hover:bg-[#0A192F] hover:scale-105 hover:shadow-[0_0_30px_hsl(var(--ring)/0.55)] transition-all duration-300"
         >
           View Our Projects <ArrowRight size={18} />
         </a>
         <a
           href="#contact"
-          className="inline-flex items-center justify-center px-8 py-3.5 rounded-full border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground hover:shadow-lg transition-all duration-300"
+          className="cta-shimmer-secondary relative overflow-hidden inline-flex items-center justify-center px-8 py-3.5 rounded-full border border-primary text-primary font-medium shadow-[0_0_12px_hsl(var(--ring)/0.15)] hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_24px_hsl(var(--ring)/0.4)] transition-all duration-300"
         >
           Get In Touch
         </a>
