@@ -3,10 +3,9 @@ import { Menu, X, Facebook } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
+  { label: "Capabilities", href: "#capabilities" },
   { label: "Projects", href: "#projects" },
-  { label: "Process", href: "#process" },
+  { label: "Our Roadmap", href: "#roadmap" },
 ];
 
 const Navbar = () => {
