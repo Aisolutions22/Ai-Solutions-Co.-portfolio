@@ -13,8 +13,17 @@
     </noscript>
     <meta charset="UTF-8" />
     <style>
+      /* Fallback font matched to Inter metrics to prevent layout shift */
+      @font-face {
+        font-family: 'Inter Fallback';
+        src: local('Arial');
+        size-adjust: 107%;
+        ascent-override: 90%;
+        descent-override: 22%;
+        line-gap-override: 0%;
+      }
       /* Critical CSS for faster FCP */
-      body { margin: 0; background: hsl(0 0% 96%); color: hsl(0 0% 9%); font-family: Inter, system-ui, -apple-system, sans-serif; }
+      body { margin: 0; background: hsl(0 0% 96%); color: hsl(0 0% 9%); font-family: Inter, 'Inter Fallback', system-ui, -apple-system, sans-serif; }
       #root { min-height: 100vh; }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
