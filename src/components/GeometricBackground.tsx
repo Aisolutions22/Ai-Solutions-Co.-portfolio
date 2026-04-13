@@ -1,22 +1,25 @@
 import { motion } from "framer-motion";
 
 const circles = [
-  { size: "w-72 h-72", top: "5%", left: "10%", duration: 50, x: [0, 40, -30, 0], y: [0, -35, 25, 0], scale: [1, 1.04, 0.97, 1] },
-  { size: "w-96 h-96", top: "20%", left: "65%", duration: 55, x: [0, -45, 20, 0], y: [0, 30, -40, 0], scale: [1, 0.96, 1.03, 1] },
-  { size: "w-64 h-64", top: "55%", left: "5%", duration: 52, x: [0, 35, -25, 0], y: [0, -25, 45, 0], scale: [1, 1.05, 0.96, 1] },
-  { size: "w-80 h-80", top: "60%", left: "70%", duration: 58, x: [0, -35, 30, 0], y: [0, 20, -30, 0], scale: [1, 0.97, 1.04, 1] },
-  { size: "w-56 h-56", top: "35%", left: "40%", duration: 48, x: [0, 25, -40, 0], y: [0, -40, 15, 0], scale: [1, 1.03, 0.98, 1] },
-  { size: "w-72 h-72", top: "75%", left: "35%", duration: 54, x: [0, -22, 35, 0], y: [0, 32, -20, 0], scale: [1, 0.95, 1.05, 1] },
-  { size: "w-48 h-48", top: "10%", left: "85%", duration: 50, x: [0, -30, 15, 0], y: [0, 22, -35, 0], scale: [1, 1.04, 0.97, 1] },
+  { size: "w-24 h-24", top: "8%", left: "15%", duration: 16, x: [0, 120, -80, 60, 0], y: [0, -90, 70, -40, 0], scale: [1, 1.02, 0.98, 1] },
+  { size: "w-36 h-36", top: "25%", left: "60%", duration: 18, x: [0, -130, 90, -50, 0], y: [0, 80, -110, 30, 0], scale: [1, 0.97, 1.03, 1] },
+  { size: "w-20 h-20", top: "50%", left: "10%", duration: 15, x: [0, 150, -60, 100, 0], y: [0, -60, 120, -80, 0], scale: [1, 1.03, 0.97, 1] },
+  { size: "w-32 h-32", top: "55%", left: "75%", duration: 19, x: [0, -100, 140, -70, 0], y: [0, 70, -50, 90, 0], scale: [1, 0.98, 1.02, 1] },
+  { size: "w-28 h-28", top: "30%", left: "40%", duration: 17, x: [0, 80, -120, 40, 0], y: [0, -100, 60, -30, 0], scale: [1, 1.02, 0.98, 1] },
+  { size: "w-22 h-22", top: "70%", left: "30%", duration: 16, x: [0, -70, 110, -90, 0], y: [0, 90, -70, 50, 0], scale: [1, 0.97, 1.04, 1] },
+  { size: "w-26 h-26", top: "15%", left: "80%", duration: 18, x: [0, -90, 60, -110, 0], y: [0, 60, -100, 40, 0], scale: [1, 1.03, 0.97, 1] },
+  { size: "w-20 h-20", top: "45%", left: "55%", duration: 15, x: [0, 100, -80, 120, 0], y: [0, -80, 100, -60, 0], scale: [1, 0.98, 1.03, 1] },
+  { size: "w-32 h-32", top: "65%", left: "50%", duration: 20, x: [0, -60, 130, -40, 0], y: [0, 50, -90, 70, 0], scale: [1, 1.02, 0.97, 1] },
+  { size: "w-24 h-24", top: "80%", left: "20%", duration: 17, x: [0, 90, -100, 70, 0], y: [0, -70, 80, -50, 0], scale: [1, 0.98, 1.02, 1] },
 ];
 
 const GeometricBackground = () => (
   <div className="fixed inset-0 overflow-hidden pointer-events-none" style={{ zIndex: -1 }}>
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,_rgba(251,146,60,0.35)_0%,_rgba(255,237,213,0.25)_35%,_rgba(255,255,255,1)_70%)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,white_0%,#FFEDD5_40%,#FED7AA_50%,#FFEDD5_60%,white_100%)]" />
     {circles.map((c, i) => (
       <motion.div
         key={i}
-        className={`absolute ${c.size} rounded-full border border-orange-400/30 bg-transparent`}
+        className={`absolute ${c.size} rounded-full border-[1px] border-orange-400/30 bg-transparent`}
         style={{ top: c.top, left: c.left }}
         animate={{ x: c.x, y: c.y, scale: c.scale, rotate: [0, 180, 360] }}
         transition={{ duration: c.duration, repeat: Infinity, ease: "easeInOut" }}

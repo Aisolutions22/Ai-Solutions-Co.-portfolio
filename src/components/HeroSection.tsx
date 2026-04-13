@@ -8,10 +8,10 @@ const impactCards = [
 ];
 
 const HeroSection = () => (
-  <section className="flex flex-col items-center justify-start text-center px-6 pt-32 pb-16 relative overflow-hidden">
+  <section className="flex flex-col items-center justify-start text-center px-6 pt-20 pb-10 relative overflow-hidden">
     <div className="relative z-10 w-full max-w-6xl">
       {/* Badge */}
-      <div className="shimmer-badge pulse-badge inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900/80 text-white mb-12 shadow-[0_0_20px_rgba(251,146,60,0.4),0_0_40px_rgba(0,82,255,0.2)]">
+      <div className="shimmer-badge pulse-badge inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900/80 text-white mb-6 shadow-[0_0_20px_rgba(251,146,60,0.4),0_0_40px_rgba(0,82,255,0.2)]">
         <ShieldCheck size={16} className="text-emerald-400" />
         <span className="text-sm font-medium tracking-wide">Verified AI Architecture & Digital Transformation Expert</span>
       </div>
@@ -23,12 +23,12 @@ const HeroSection = () => (
       </h1>
 
       {/* Founder Intro */}
-      <p className="mt-8 text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
+      <p className="mt-4 text-slate-600 max-w-2xl mx-auto text-base leading-relaxed">
         I'm Mohamed Ali, Founder of AI Solutions. With over a decade of experience in business leadership and sales management, I bridge the gap between complex AI technology and real-world business growth through advanced n8n automation.
       </p>
 
       {/* CTA Buttons */}
-      <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+      <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
         <a
           href="#projects"
           className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium hover:bg-[#0A192F] hover:scale-105 hover:shadow-xl transition-all duration-300"
@@ -44,7 +44,7 @@ const HeroSection = () => (
       </div>
 
       {/* Impact Cards */}
-      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {impactCards.map((card) => (
           <div
             key={card.label}
