@@ -129,7 +129,7 @@ html {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(
@@ -139,6 +139,7 @@ html {
       transparent 100%
     );
     animation: shimmer 2.5s infinite;
+    will-change: transform;
   }
 
   .pulse-badge {
@@ -147,8 +148,8 @@ html {
 }
 
 @keyframes shimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 @keyframes badge-pulse {
@@ -157,19 +158,20 @@ html {
 }
 
 @keyframes cta-shimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 .cta-shimmer-primary::after {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.35) 50%, transparent 100%);
   animation: cta-shimmer 3s ease-in-out infinite;
+  will-change: transform;
 }
 
 .cta-shimmer-primary:hover::after {
@@ -180,11 +182,12 @@ html {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent 0%, rgba(251,146,60,0.18) 50%, transparent 100%);
   animation: cta-shimmer 4s ease-in-out infinite;
+  will-change: transform;
 }
 
 .cta-shimmer-secondary:hover::after {
