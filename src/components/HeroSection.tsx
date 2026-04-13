@@ -24,7 +24,8 @@ const HeroSection = () => (
 
       {/* Founder Intro */}
       <p className="mt-4 text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed text-center">
-        I'm <span className="text-orange-600 font-semibold">Mohamed Ali</span>, Founder of <span className="font-bold text-foreground whitespace-nowrap">AI Solutions co.</span> With over a decade of experience in business leadership and sales management, I bridge the gap between complex AI technology and real-world business growth through advanced n8n automation.
+        I'm <span className="text-orange-600 font-semibold">Mohamed Ali</span>, Founder of <span className="font-bold text-foreground whitespace-nowrap">AI Solutions co.</span> With over a decade of experience in business leadership and sales management, I bridge the gap between complex AI technology and real-world business growth
+        <span className="block text-center mt-2">Through advanced <span className="font-bold text-foreground">Ai Stack</span> And Ai Automation With <span className="font-bold text-foreground">N8N</span></span>
       </p>
 
       {/* CTA Buttons */}
