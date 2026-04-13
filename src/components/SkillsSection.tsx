@@ -11,7 +11,7 @@ const capabilities = [
 ];
 
 const SkillsSection = () => (
-  <section id="skills" className="py-24 px-6">
+  <section id="capabilities" className="py-24 px-6">
     <div className="max-w-6xl mx-auto">
       <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-2">Capabilities</p>
       <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-[0.02em] text-foreground">
