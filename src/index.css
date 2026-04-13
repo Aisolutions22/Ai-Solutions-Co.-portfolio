@@ -123,6 +123,7 @@ html {
   .shimmer-badge {
     position: relative;
     overflow: hidden;
+    contain: layout style;
   }
 
   .shimmer-badge::after {
