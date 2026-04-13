@@ -5,9 +5,11 @@ import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ProcessSection from "@/components/ProcessSection";
 import ContactSection from "@/components/ContactSection";
+import GeometricBackground from "@/components/GeometricBackground";
 
 const Index = () => (
-  <div className="min-h-screen bg-background">
+  <div className="min-h-screen">
+    <GeometricBackground />
     <Navbar />
     <main>
       <HeroSection />
