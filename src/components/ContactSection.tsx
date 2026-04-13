@@ -10,10 +10,12 @@ const socials = [
 const ContactSection = () => (
   <section id="contact" className="py-24 px-6">
     <div className="max-w-6xl mx-auto text-center">
-      <p className="text-muted-foreground text-sm font-medium mb-2 uppercase tracking-wider">Get In Touch</p>
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Let's Build Something Amazing</h2>
-      <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-12">
-        Ready to automate your business with AI? Let's discuss your project.
+      <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-2">Get In Touch</p>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-[0.02em] text-foreground">
+        Ready to turn your operational chaos into a scalable AI-driven engine?
+      </h2>
+      <p className="text-muted-foreground text-base max-w-xl mx-auto mb-12">
+        Let's discuss how we can architect the right solution for your business.
       </p>
 
       <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
@@ -23,7 +25,7 @@ const ContactSection = () => (
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full glass-card text-foreground font-medium hover:border-primary/40 hover:shadow-lg hover:scale-105 transition-all duration-300"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full glass-card text-foreground font-medium hover:border-primary/40 hover:shadow-[0_0_20px_rgba(251,146,60,0.2)] hover:scale-105 hover:text-[#0A192F] transition-all duration-300"
           >
             <Icon size={18} /> {label}
           </a>
