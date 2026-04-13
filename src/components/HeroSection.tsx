@@ -23,8 +23,8 @@ const HeroSection = () => (
       </h1>
 
       {/* Founder Intro */}
-      <p className="mt-4 text-slate-600 max-w-2xl mx-auto text-base leading-relaxed">
-        I'm Mohamed Ali, Founder of AI Solutions. With over a decade of experience in business leadership and sales management, I bridge the gap between complex AI technology and real-world business growth through advanced n8n automation.
+      <p className="mt-4 text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed text-center">
+        I'm <span className="text-orange-600 font-semibold">Mohamed Ali</span>, Founder of <span className="font-bold text-foreground whitespace-nowrap">AI Solutions co.</span> With over a decade of experience in business leadership and sales management, I bridge the gap between complex AI technology and real-world business growth through advanced n8n automation.
       </p>
 
       {/* CTA Buttons */}
