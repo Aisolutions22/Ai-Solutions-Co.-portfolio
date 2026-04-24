@@ -14,10 +14,16 @@ const Index = () => (
     <Navbar />
     <main>
       <HeroSection />
-      <Suspense fallback={null}>
+      <Suspense fallback={<div style={{ minHeight: "600px" }} aria-hidden="true" />}>
         <SkillsSection />
+      </Suspense>
+      <Suspense fallback={<div style={{ minHeight: "600px" }} aria-hidden="true" />}>
         <ProjectsSection />
+      </Suspense>
+      <Suspense fallback={<div style={{ minHeight: "500px" }} aria-hidden="true" />}>
         <ProcessSection />
+      </Suspense>
+      <Suspense fallback={<div style={{ minHeight: "500px" }} aria-hidden="true" />}>
         <ContactSection />
       </Suspense>
     </main>
