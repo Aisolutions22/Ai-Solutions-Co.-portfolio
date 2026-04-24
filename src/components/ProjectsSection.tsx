@@ -82,7 +82,7 @@ const ProjectsSection = () => (
           >
             <div className="flex items-center gap-3 mb-4">
               {p.flagship && <Rocket size={16} className="text-primary" />}
-              <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
+              <span className="text-xs font-semibold text-primary bg-primary/20 px-3 py-1 rounded-full">
                 {p.category}
               </span>
               <span className="text-xs text-muted-foreground">{p.location}</span>
